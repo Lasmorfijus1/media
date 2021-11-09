@@ -1,0 +1,103 @@
+/* Bazinis css viskam */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  
+  
+}
+
+/* Pradedam pagrindinį su sidebar */
+
+.container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "aside aside aside aside"
+    "footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: blueviolet;
+  height: 10vh;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: rgb(214, 226, 43);
+  height: 50vh;
+}
+
+.main {
+  grid-area: main;
+  background-color: rgb(55, 43, 226);
+  height: 10vh;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: rgb(226, 43, 43);
+  height: 10vh;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(43, 226, 58);
+  height: 10vh;
+}
+
+/* Pradedam kitą dydį */
+@media only screen and (min-width: 767px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1%;
+    height: 100vh;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "main main main aside"
+      "footer footer footer footer";
+  }
+
+  .header {
+    grid-area: header;
+    background-color: darkgreen;
+    height: 10vh;
+  }
+
+  .nav {
+    grid-area: nav;
+    height: 10vh;
+    background-color: blueviolet;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: red;
+    height: 100vh;
+  }
+
+  .aside {
+    grid-area: aside;
+    background-color: cornflowerblue;
+    height: 100vh;
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: darkblue;
+    height: 10vh;
+  }
+}
