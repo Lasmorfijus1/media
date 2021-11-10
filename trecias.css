@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-body {
- 
-}
-
 h1 {
   text-align: center;
   padding: 10%;
@@ -43,7 +39,7 @@ h1 {
   border-style: solid;
   border-color: black;
   border-width: 0px 0px 2px 2px;
-  background-color: pink;
+  background-color: rgb(231, 112, 132);
 }
 
 .beef {
@@ -62,7 +58,7 @@ h1 {
   border-style: solid;
   border-color: black;
   border-width: 0px 0px 2px 2px;
-  background-color: red;
+  background-color: rgb(190, 6, 6);
 }
 
 .sushi {
