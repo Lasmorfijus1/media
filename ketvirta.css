@@ -1,0 +1,106 @@
+
+/* Bazinis css viskam */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url(./img/bg-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left; 
+    
+  }
+  .container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    font-family: Playfair, Helvetica, sans-serif;
+    height: -webkit-fill-available;
+
+}
+.header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10vh;
+    
+}
+.logo {
+    width: 80%;
+    align-self: center;
+}
+.turinys {
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    
+}
+
+p, h2 {
+    padding-bottom: 20px;
+}
+
+p {
+    font-weight: 500;
+}
+.title {
+    text-transform: uppercase;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+form {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+input[type=submit] {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 3% 17%;
+    height: auto;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 3%;
+}
+  input {
+      background:transparent;
+      font-size: 16px;
+      height: 12vw;
+      font-weight: 500;
+      border: none;
+      border-bottom: 1px solid rgb(0, 0, 0);
+      padding: 10px;
+  }
+  ::placeholder {
+    color: rgb(0, 0, 0);
+  }
+
+    /* Pradedam media */
+
+    @media only screen and (min-width: 700px) { 
+       body {
+
+        background-image: url(./img/bg-2.png);
+       }
+    }
+
+    @media only screen and (min-width: 1000px) { 
+        body {
+ 
+         background-image: url(./img/bg-3.png);
+         background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: right;
+    
+        }
+        .container {
+            width: 50%;
+        }
+     }
