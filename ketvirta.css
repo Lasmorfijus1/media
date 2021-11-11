@@ -64,7 +64,7 @@ input[type=submit] {
     border: 1px solid rgb(0, 0, 0);
     padding: 3% 17%;
     height: auto;
-    display: block;
+   
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 3%;
@@ -82,7 +82,7 @@ input[type=submit] {
     color: rgb(0, 0, 0);
   }
 
-    /* Pradedam media */
+    /* Pradedam media normaliam ekranui */
 
     @media only screen and (min-width: 700px) { 
        body {
@@ -90,6 +90,8 @@ input[type=submit] {
         background-image: url(./img/bg-2.png);
        }
     }
+
+    /* Planšetukei */
 
     @media only screen and (min-width: 1000px) { 
         body {
@@ -102,5 +104,11 @@ input[type=submit] {
         }
         .container {
             width: 50%;
+        }
+        input {
+            background:transparent;
+            font-size: 16px;
+            height: 5vw;
+    
         }
      }
